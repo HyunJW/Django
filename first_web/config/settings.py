@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "address",
     "memo",
+    "book",
 ]
 
 MIDDLEWARE = [
@@ -77,28 +78,28 @@ WSGI_APPLICATION = "config.wsgi.application"
 # }
 
 # #mysql
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'pyweb', # DB
-#         'USER': 'web', # id
-#         'PASSWORD': '1234', # password
-#         'HOST': 'localhost', # host
-#         'PORT': '3306', # port
-#     }
-# }
-
-#Oracle
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.oracle',
-        'NAME': 'xe', # DB
-        'USER': 'python', # id
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'pyweb', # DB
+        'USER': 'web', # id
         'PASSWORD': '1234', # password
         'HOST': 'localhost', # host
-        'PORT': '1521', # port
+        'PORT': '3306', # port
     }
 }
+
+#Oracle
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.oracle',
+#         'NAME': 'xe', # DB
+#         'USER': 'python', # id
+#         'PASSWORD': '1234', # password
+#         'HOST': 'localhost', # host
+#         'PORT': '1521', # port
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
