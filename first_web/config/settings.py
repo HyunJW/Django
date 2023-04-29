@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     "book",
     "transaction",
     "procedure",
+    "mymember",
+    "ajax",
 ]
 
 MIDDLEWARE = [
@@ -91,7 +93,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 #     }
 # }
 
-#Oracle
+# Oracle
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
