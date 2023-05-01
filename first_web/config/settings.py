@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "ajax",
     "debug_toolbar",
     "survey",
+    "guestbook",
 ]
 
 MIDDLEWARE = [
