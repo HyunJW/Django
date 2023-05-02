@@ -16,6 +16,7 @@ urlpatterns = [
     path('survey/', include('survey.urls')),
     path('guestbook/', include('guestbook.urls')),
     path('member/', include('member.urls')),
+    path('shop/', include('shop.urls')),
 ]
 
 if settings.DEBUG:

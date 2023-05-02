@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "survey",
     "guestbook",
     "member",
+    "shop",
 ]
 
 MIDDLEWARE = [
