@@ -2,6 +2,9 @@ from django.contrib import admin
 from django.urls import path
 from mytest.views import ch01, ch02
 
+handler404 = "mytest.views.error.error404"
+handler500 = "mytest.views.error.error500"
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('', ch01.home),
