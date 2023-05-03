@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <!--
+    multiple: (ctrl + 클릭)으로 여러 값 선택 가능
+    size="int": 한번에 보여줄 목록 개수
+    -->
+    <select name="car" size="4" multiple>
+        <option value="bmw">BMW</option>
+        <option value="benz" selected>Benz</option>
+        <option value="hyundai">Hyundai</option>
+        <option value="kia">Kia</option>
+    </select>
+    <input type="submit" value="OK">
+</form>
+</body>
+</html>
