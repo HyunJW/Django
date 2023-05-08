@@ -1,0 +1,11 @@
+CREATE DATABASE web;
+SHOW DATABASES;
+
+#사용자 계정 생성
+CREATE USER 'user'@'%' IDENTIFIED BY '1234';
+CREATE USER 'user'@'localhost' IDENTIFIED BY '1234';
+FLUSH PRIVILEGES;
+
+#사용 권한 부여
+GRANT ALL PRIVILEGES ON web.* TO 'user'@'%';
+GRANT ALL PRIVILEGES ON web.* TO 'user'@'localhost';
