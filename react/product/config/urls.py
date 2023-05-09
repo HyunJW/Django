@@ -6,4 +6,7 @@ urlpatterns = [
     path("admin", admin.site.urls),
     path("list", views.list),
     path("insert", views.insert),
+    path("detail/<int:product_code>", views.detail),
+    path('update', views.update),
+    path('delete', views.delete),
 ]

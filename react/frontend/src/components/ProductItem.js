@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './main.css';
 
 function ProductItem({ product_code, product_name, price, filename }){
@@ -18,8 +19,10 @@ function ProductItem({ product_code, product_name, price, filename }){
         return (
             <div style={{ margin: '5px' }}>
                 <span dangerouslySetInnerHTML={{ __html: img }}></span>
-                상품명: {product_name}<br/>
-                가격: {price}원
+                <Link to={`/detail/${product_code}`}>
+                    상품명: {product_name}<br/>
+                    가격: {price}원
+                </Link>
                 <br/><br/>
             </div>
         )
