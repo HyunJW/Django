@@ -1,11 +1,14 @@
 import os.path
-from django.shortcuts import HttpResponse
+from django.shortcuts import render, HttpResponse
 from shop.models import Product
 from shop import ProductSerializer as ps
 import simplejson
 from django.views.decorators.csrf import csrf_exempt
 
 UPLOAD_DIR = os.path.dirname(__file__) + '/static/images/'
+
+def home(request):
+    return render(request, 'index.html')
 
 def list(request):
     try:
